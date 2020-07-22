@@ -17,6 +17,7 @@ html, body {
 header {
     width: 100%;
     height: 90vh;
+    min-height: 650px;
     padding: 40px 2%;
     background-image: url('../images/blog.jpg');
     background-size: cover;
@@ -80,14 +81,14 @@ header nav a {
     margin-top: 10px;
 }
 
-section.sessao {
+section.servicos {
     width: 100%;
     height: 400px;
     background-color: #f6f7f9;
     padding: 0 2%;
 }
 
-section.sessao .container {
+section.servicos .container {
     max-width: 1000px;
 }
 
@@ -114,7 +115,8 @@ section.sessao .container {
 .sessao-texto ul {
     font-size: 17px;
     color: #383838;
-    list-style-position: inside;
+    list-style-position: outside;
+    padding-left: 15px;
 }
 
 .sessao-texto ul li {
@@ -150,17 +152,79 @@ section.sessao .container {
     background-size: 100% 100%;
 }
 
+section.sobre {
+    padding: 40px 2%;
+    background-color: white;
+    text-align: center;
+}
+
+section.sobre .container {
+    display: block;
+    max-width: 1000px;
+}
+
+section.sobre h2 {
+    color: #444;
+    font-weight: 300;
+}
+
+section.sobre p {
+    margin-top: 30px;
+    max-width: 900px;
+    display: inline-block;
+    color: #383838;
+}
+
+section.sobre img {
+    width: 100%;
+    margin-top: 40px;
+}
+
 @media screen and (max-width: 819px) {
     header {
         height: auto;
         min-height: 90vh;
     }
+
     header nav {
+        cursor: pointer;
         display: block;
+        width: 32px;
+        height: 32px;
+        background-image: url('../images/menu.png');
+        background-size: 100% 100%;
     }
 
-    header nav li {
+    header nav:hover ul {
+        opacity: 1;
+    }
+
+    header nav ul {
+        opacity: 0;
+        transition: 1s;
+        background-color: white;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 80px;
+        color: white;
+        list-style-type: none;
+        text-align: center;
+    }
+
+    header nav ul li {
         display: block;
+        padding: 8px 0;
+        border-bottom: 1px solid black;
+        transition: 0.4s;
+    }
+
+    header nav ul li:hover {
+        background-color: rgb(230, 230, 230);
+    }
+
+    header nav ul li a {
+        color: black;
     }
 
     .chamada1 {
@@ -183,12 +247,12 @@ section.sessao .container {
         margin-top: 10px;
     }
 
-    section.sessao {
+    section.servicos {
         padding: 40px 2%;
         height: auto;
     }
 
-    section.sessao .container {
+    section.servicos .container {
         justify-content: center;
     }
 
@@ -218,6 +282,4 @@ section.sessao .container {
     .sessao-device {
         display: none;
     }
-
-    
 }
