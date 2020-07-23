@@ -39,6 +39,7 @@ header .logo {
     width: 160px;
     height: 40px;
     background-image: url('../images/logo.png');
+    background-size: cover;
 }
 
 header nav {
@@ -264,6 +265,8 @@ section.sobre .direita {
     margin-top: -4px;
     border-radius: 20px;
     background-color: gray;
+    background-image: url('../images/actor.jpg');
+    background-size: cover;
 }
 
 .sobre-autor .texto-autor {
@@ -366,7 +369,7 @@ section.contato {
 
 .map-box {
     width: 50%;
-    color: white;
+    color: #393939;
     padding: 0 10px 0 0;
 }
 
@@ -398,6 +401,23 @@ section.contato {
     height: 100%;
     background-color: white;
     border: 5px solid rgb(200, 200, 200);
+}
+
+footer {
+    padding: 40px 2%;
+    background-color: #192123;
+    color: white;
+    font-size: 14px;
+}
+
+footer .container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer a {
+    color: #bb1600;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 819px) {
@@ -567,5 +587,15 @@ section.contato {
 
     .wrapper-esquerda, .sobre-autor, .slider-bullets {
         padding: 0 2%;
+    }
+
+    footer .container {
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer p:nth-of-type(2) {
+        margin-top: 8px;
     }
 }
