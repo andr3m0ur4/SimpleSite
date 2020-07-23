@@ -1,3 +1,4 @@
+/************** Ajustes gerais *******************/
 @font-face {
     src: url('../fonts/Roboto-Regular.ttf');
     font-family: 'Roboto';
@@ -14,6 +15,7 @@ html, body {
     height: 100%;
 }
 
+/******************** Cabeçalho **********************/
 header {
     width: 100%;
     height: 90vh;
@@ -82,6 +84,7 @@ header nav a {
     margin-top: 10px;
 }
 
+/******************** Sessão Serviços **********************/
 section.servicos {
     width: 100%;
     height: 400px;
@@ -154,6 +157,7 @@ section.servicos .container {
     background-size: 100% 100%;
 }
 
+/******************** Sessão Sobre **********************/
 section.sobre {
     padding: 40px 0 0;
     background-color: white;
@@ -302,6 +306,7 @@ section.sobre .direita {
     background-color: #444;
 }
 
+/******************** Sessão Contato **********************/
 section.contato {
     background-color: #fff;
     padding: 100px 0;
@@ -403,6 +408,7 @@ section.contato {
     border: 5px solid rgb(200, 200, 200);
 }
 
+/******************** Rodapé **********************/
 footer {
     padding: 40px 2%;
     background-color: #192123;
@@ -420,6 +426,7 @@ footer a {
     text-decoration: none;
 }
 
+/******************** Media Queries **********************/
 @media screen and (max-width: 819px) {
     header {
         height: auto;
