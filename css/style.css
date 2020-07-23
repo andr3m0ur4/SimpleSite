@@ -90,6 +90,7 @@ section.servicos {
 
 section.servicos .container {
     max-width: 1000px;
+    height: calc(100% + 30px);
 }
 
 .sessao-texto {
@@ -144,7 +145,7 @@ section.servicos .container {
 
 .sessao-device {
     width: 50%;
-    height: 430px;
+    height: 100%;
     position: relative;
     top: -30px;
     background-image: url('../images/device.png');
@@ -153,14 +154,20 @@ section.servicos .container {
 }
 
 section.sobre {
-    padding: 40px 2%;
+    padding: 40px 0;
     background-color: white;
     text-align: center;
 }
 
-section.sobre .container {
-    display: block;
+section.sobre .container:first-child {
+    padding: 0 2%;
     max-width: 1000px;
+    flex-direction: column;
+}
+
+section.sobre .container:last-child {
+    width: 100%;
+    max-width: none;
 }
 
 section.sobre h2 {
@@ -176,8 +183,120 @@ section.sobre p {
 }
 
 section.sobre img {
+    position: relative;
+    top: 120px;
     width: 100%;
-    margin-top: 40px;
+    margin-top: -50px;
+}
+
+section.sobre .esquerda, section.sobre .direita {
+    width: 50%;
+    padding: 140px 0 90px 0;
+}
+
+section.sobre .esquerda {
+    background-color: #bb1600;
+    text-align: right;
+    padding-left: 2%;
+}
+
+.wrapper-esquerda {
+    max-width: 470px;
+    display: inline-block;
+    padding-right: 30px;
+    text-align: left;
+}
+
+section.sobre .esquerda h2 {
+    color: white;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 23px;
+}
+
+section.sobre .esquerda p {
+    color: white;
+    font-size: 15px;
+    line-height: 35px;
+    margin-top: 10px;
+}
+
+section.sobre .direita {
+    background-color: #f6f7f9;
+    text-align: left;
+    padding-right: 2%;
+}
+
+.sobre-autor {
+    max-width: 470px;
+    display: inline-block;
+    padding-left: 30px;
+    text-align: left;
+}
+
+.cabecalho-autor {
+    width: 100%;
+    display: flex;
+}
+
+.titulo-autor {
+    width: 40%;
+}
+
+.cabecalho-autor .titulo-autor h2 {
+    color: #232323;
+    font-weight: 400;
+    font-size: 25px;
+    padding-right: 20px;
+}
+
+.cabecalho-autor .titulo-autor p {
+    margin-top: 0;
+    font-size: 13px;
+    color: #223322;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.cabecalho-autor .img-autor {
+    width: 40px;
+    height: 40px;
+    margin-top: -4px;
+    border-radius: 20px;
+    background-color: gray;
+}
+
+.sobre-autor .texto-autor {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.sobre-autor .texto-autor p {
+    margin-top: 0;
+    color: #232323;
+    font-size: 15px;
+}
+
+.slider-bullets {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 12px;
+    padding-left: 30px;
+    text-align: left;
+    display: inline-block;
+}
+
+.slider-bullets span {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: rgb(200, 200, 200);
+}
+
+.slider-bullets span.ativo {
+    background-color: black;
 }
 
 @media screen and (max-width: 819px) {
