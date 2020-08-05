@@ -1,17 +1,20 @@
+let map
+
 window.onload = () => {
 
     initialize()
 
     let conteudo = document.createElement('p')
     conteudo.innerHTML = 'Minha Casa!!'
-    conteudo.style.color = '#ccc'
+    conteudo.style.color = '#bb1600'
     conteudo.style.fontSize = '18px'
     conteudo.style.fontWeight = '600'
     conteudo.style.padding = '10px 0'
     addMarker(-22.799454, -45.226788, '', conteudo)
-}
 
-let map
+    //map.panTo({'lat': -23.550520, 'lng': -46.633309})
+    //map.setZoom(8)
+}
 
 function initialize() {
     let map_prop = {
