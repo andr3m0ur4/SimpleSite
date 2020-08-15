@@ -254,11 +254,22 @@ section.sobre .direita {
     padding-right: 2%;
 }
 
-.sobre-autor {
+.scroll-equipe {
     max-width: 470px;
-    display: inline-block;
     padding-left: 30px;
+    overflow: hidden;
+}
+
+.scroll-wrapper {
+    width: 100%;
+    display: flex;
+}
+
+.sobre-autor {
+    width: 100%;
+    display: inline-block;
     text-align: left;
+    padding-right: 30px;
 }
 
 .cabecalho-autor {
@@ -288,7 +299,6 @@ section.sobre .direita {
 .cabecalho-autor .img-autor {
     width: 40px;
     height: 40px;
-    margin-top: -4px;
     border-radius: 20px;
     background-color: gray;
     background-image: url('../images/actor.jpg');
@@ -320,6 +330,7 @@ section.sobre .direita {
     height: 16px;
     display: inline-block;
     cursor: pointer;
+    margin-right: 8px;
     border-radius: 8px;
     background-color: rgb(200, 200, 200);
 }
@@ -620,12 +631,17 @@ footer a {
     }
 
     section.sobre .direita {
-        padding-right: 0;
+        padding-right: 2%;
         padding-left: 2%;
     }
 
-    .wrapper-esquerda, .sobre-autor, .slider-bullets {
+    .wrapper-esquerda, .slider-bullets {
         padding: 0 2%;
+    }
+
+    .scroll-equipe {
+        max-width: none;
+        padding-left: 2%;
     }
 
     footer .container {
