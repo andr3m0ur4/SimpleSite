@@ -339,6 +339,41 @@ section.sobre .direita {
     background-color: #444;
 }
 
+section.diferenciais {
+    padding: 40px 0;
+}
+
+section.diferenciais .container {
+    flex-direction: column;
+}
+
+section.diferenciais > .container > h2 {
+    text-align: center;
+    font-size: 27px;
+    font-weight: 300;
+    color: #444;
+}
+
+.box-diferenciais {
+    margin-top: 40px;
+    display: flex;
+}
+
+.box-single-diferencial {
+    padding: 0 10px;
+}
+
+.box-single-diferencial h2 {
+    font-size: 55px;
+    color: #bb1600;
+    text-align: center;
+}
+
+.box-single-diferencial p {
+    color: rgb(100, 100, 100);
+    font-size: 15px;
+}
+
 /***************************************************************/
 /********************   Sessão Contato  ************************/
 /***************************************************************/
@@ -642,6 +677,21 @@ footer a {
     .scroll-equipe {
         max-width: none;
         padding-left: 2%;
+    }
+
+    .box-diferenciais {
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .box-single-diferencial {
+        margin-top: 12px;
+        text-align: center;
+    }
+
+    .box-single-diferencial p {
+        display: inline-block;
+        max-width: 400px;
     }
 
     footer .container {
